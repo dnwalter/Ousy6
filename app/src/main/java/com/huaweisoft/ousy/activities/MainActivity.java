@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             super.handleMessage(msg);
             if (msg.what == 0x123)
-            {
+            {   //
                 HintHelper.getInstance(MainActivity.this).setProgress(mPercent);
             }
         }
