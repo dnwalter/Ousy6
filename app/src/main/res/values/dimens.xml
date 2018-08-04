@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 蓝牙对话框 -->
+    <dimen name="bluetooth_dialog_height">250dp</dimen>
+
+    <!-- wifi对话框 -->
+    <dimen name="wifidialog_height">250dp</dimen>
+    <dimen name="wifidialog_root_pad">3dp</dimen>
+    <dimen name="wifidialog_llyt_item_height">50dp</dimen>
+    <dimen name="wifidialog_llyt_item_pad">10dp</dimen>
+    <dimen name="wifidialog_tv_state_textsize">12sp</dimen>
+    <dimen name="wifidialog_tv_state_padr">10dp</dimen>
+</resources>

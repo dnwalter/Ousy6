@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp">
+
+    <com.huaweisoft.ousy.views.NumberUpProgressBar
+        android:id="@+id/numberup_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:max="100"/>
+    <EditText
+        android:id="@+id/view_et_percent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/view_btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定"/>
+</LinearLayout>

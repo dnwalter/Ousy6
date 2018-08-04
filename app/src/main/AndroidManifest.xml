@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.huaweisoft.ousy"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 蓝牙 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <!-- 网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- 震动 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 读写内存卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- 音频视频 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+
+    <!-- 读手机状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!-- 短信 -->
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <activity android:name=".activities.ServiceActivity">
+        </activity>
+        <activity android:name=".activities.PhoneActivity">
+        </activity>
+        <activity android:name=".activities.SensorActivity">
+        </activity>
+        <activity android:name=".activities.ViewActivity">
+        </activity>
+        <activity android:name=".activities.SocketAct.ClientActivity">
+        </activity>
+        <activity android:name=".activities.SocketAct.ServerActivity">
+        </activity>
+        <activity android:name=".activities.BlueTooth.BlueToothActivity">
+        </activity>
+        <activity android:name=".activities.BlueTooth.ClientChatAct">
+        </activity>
+        <activity android:name=".activities.BlueTooth.ServerChatAct">
+        </activity>
+        <activity android:name=".activities.media.AudioActivity">
+        </activity>
+        <activity android:name=".activities.media.FFmpegAct">
+        </activity>
+        <activity android:name=".activities.WifiActivity">
+        </activity>
+        <activity android:name=".activities.SmsActivity">
+        </activity>
+        <activity android:name=".activities.OtherActivity">
+        </activity>
+        <service android:name=".services.BindService"></service>
+        <receiver android:name=".receiver.SmsReceiver" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

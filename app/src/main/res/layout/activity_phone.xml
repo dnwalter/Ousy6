@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="up"/>
+
+        <Button
+            android:id="@+id/btn_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="down"/>
+
+        <Button
+            android:id="@+id/btn_mute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mute"/>
+
+        <Button
+            android:id="@+id/btn_vibrate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="vibrate"/>
+
+        <Button
+            android:id="@+id/btn_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="wifi"/>
+
+        <Button
+            android:id="@+id/btn_gps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="gps"/>
+
+        <Button
+            android:id="@+id/btn_4g"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4g"/>
+
+        <Button
+            android:id="@+id/btn_memory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="memory"/>
+
+        <TextView
+            android:id="@+id/phone_battery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="电量：60%"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/phone_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="电量：60%"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</ScrollView>

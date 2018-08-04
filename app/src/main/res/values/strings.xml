@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ousy</string>
+
+    <!-- 对话框 -->
+    <string name="dialog_positive">确定</string>
+    <string name="dialog_negative">取消</string>
+</resources>

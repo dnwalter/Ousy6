@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NumberUpProgressBar">　　
+        <attr name="android:max"/>　　
+        <attr name="android:textColor"/>　　
+        <attr name="android:textSize"/>　　
+        <attr name="android:progress"/>　　
+        <attr name="textPadding" format="dimension"/>　　
+        <attr name="progressbarHeight" format="dimension"/>
+    </declare-styleable>
+</resources>
